@@ -56,7 +56,7 @@ def main():
         print("Collecion Already Exists")
     contents = []
     with open("./Data/dataset1/text.data.jsonl/text.data.jsonl", 'r') as file:
-        content = list(file)[10000:13000]
+        content = list(file)
         for sentence in content:
             try:
                 s = json.loads(sentence)
